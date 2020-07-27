@@ -1,0 +1,143 @@
+.carousel-control-next {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.content {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-caption {
+ background: rgba(0, 0, 0, 0.6);
+}
+
+.d-block { display: block; }
+.d-inline-block { display: inline-block; }
+
+.text-center { text-align: center; }
+.text-left   { text-align: left; }
+.text-right  { text-align: right; }
+
+
+.row {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.block {
+  width: 100px;
+  display: inline-block;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+}
+
+.bar {
+    fill: #008040;
+}
+
+.axis {
+    font-size: 14px;
+    font-family: "Arial", sans-serif;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    display: none;
+}
+
+.label {
+    font-size: 14px;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+
+.axisWhite line{
+  stroke: white;
+      font-size: 14px;
+    font-family: "Arial", sans-serif;
+}
+
+.axisWhite path{
+  stroke: white;
+      font-size: 14px;
+    font-family: "Arial", sans-serif;
+}
+
+.axisWhite text{
+  fill: white;
+      font-size: 14px;
+    font-family: "Arial", sans-serif;
+} 
+
+.annotation-note-title, text.title {
+  font-weight: bold;
+}
+
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: orange;
+}
+
+.bar:hover {
+  fill: orangered ;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
