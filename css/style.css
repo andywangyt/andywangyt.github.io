@@ -8,8 +8,7 @@
 }
 
 .carousel-item {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 85px;
   height: 95vh;
   min-height: 350px;
   background: no-repeat center center scroll;
@@ -32,6 +31,7 @@
 
 
 .row {
+
   width: 100%;
   text-align: center;
   display: flex;
