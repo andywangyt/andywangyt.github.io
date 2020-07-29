@@ -11,40 +11,6 @@ data3 =
       {'GameName':'Super Mario Galaxy 2','Games':'Platform','Sales':7.69, 'Images': 'images/logos/TM_Wii_SuperMarioGalaxy2.png', 'Publisher': 'Nintendo'},
       {'GameName':'StarCraft II: Wings of Liberty','Games':'PC','Sales':14.83, 'Images': 'images/logos/StarCraft II Wings of Liberty.png', 'Publisher': 'Activision'}
   ];
-const annotations3 = [
-    {
-      note: {
-        title: "A real-time strategy game",
-        wrap: 200,
-        align: "left",
-      },
-      connector: {
-        end: "arrow" // 'dot' also available
-      },
-      x: 60,
-      y: 65,
-      dy: 47,
-      dx: 50
-    },
-    {
-    note: {
-      title: "A sequel of Super Mario",
-      wrap: 200,
-      align: "left",
-    },
-    connector: {
-      end: "arrow" // 'dot' also available
-    },
-    x: 40,
-    y: 105,
-    dy: 47,
-    dx: 10
-    },
-    ].map(function(d){ d.color = "#E8336D"; return d})
-
-const makeannotations3 = d3.annotation()
-  .type(d3.annotationLabel)
-  .annotations(annotations3);
 
 var tooltip_bar3 = d3.select("#scene3_bar_chart")
 .append("div")
@@ -71,7 +37,6 @@ tooltip_bar3
           )
   .style("top", (d3.mouse(this)[1]) + "px")
 }
-
 
 var moveTooltip_bar3= function(d) {
     tooltip_bar3

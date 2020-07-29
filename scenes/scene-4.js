@@ -2369,7 +2369,7 @@ var bubble = d3.pack(dataset)
 var svg = d3.select("#scene4")
     .append("svg")
     .attr("width", diameter)
-    .attr("height", diameter)
+    .attr("height", 700)
     .attr("class", "bubble");
 
 var nodes = d3.hierarchy(dataset)

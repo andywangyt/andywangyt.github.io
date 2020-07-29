@@ -53,7 +53,6 @@ tooltip3
   .style("opacity", 0)
 }
 
-
 var diameter = 500;
 var color = d3.scaleOrdinal(d3.schemeCategory20);
 
@@ -124,3 +123,35 @@ node.append("text")
 
 d3.select(self.frameElement)
     .style("height", diameter + "px");
+
+
+svg.append("line")          // attach a line
+.style("stroke", "lightgreen")  // colour the line
+.style("stroke-width", 2)
+.attr("x1", 160)     // x position of the first end of the line
+.attr("y1", 230)      // y position of the first end of the line
+.attr("x2", 40)     // x position of the second end of the line
+.attr("y2", 420);
+
+var text = svg.append("text");
+
+text.attr("x", 0)
+.attr("y", 430)
+.attr("font-family", "sans-serif")
+.attr("font-size", "15px")
+.attr("fill", "lightgreen");
+
+text.append('tspan')
+.text('Electronic Arts sold over 81.38')
+.attr("x", 0)
+.attr("y", 430);
+
+text.append('tspan')
+.text('million copies in 2020,')
+.attr("x", 0)
+.attr("y", 450);
+
+text.append('tspan')
+.text('ranking the top one in the world.')
+.attr("x", 0)
+.attr("y", 470);

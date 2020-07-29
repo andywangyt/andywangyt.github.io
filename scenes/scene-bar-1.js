@@ -12,28 +12,6 @@ data =
       {'GameName':'Super Mario World','Games':'GBA','Sales':20.61, 'Images': 'images/logos/super-mario-icons-super-mario.jpg', 'Publisher': 'Nintendo'}
   ];
 
-const annotations = [
-    {
-      note: {
-        label: "Super Mario World is a 1990 platform game developed by Nintendo for the Super Nintendo Entertainment System (SNES), which is often considered one of the greatest video games of all time. It is sold over 20.61 million copies in 1990,  about 57 percents in the sales of Nintendo.",
-        title: "Super Mario World",
-        wrap: 200,
-        align: "left",
-      },
-      connector: {
-        end: "arrow" // 'dot' also available
-      },
-      x: 70,
-      y: 55,
-      dy: 47,
-      dx: 10
-    },].map(function(d){ d.color = "#E8336D"; return d})
-
-const makeAnnotations = d3.annotation()
-      .type(d3.annotationLabel)
-      .annotations(annotations)
-
-      
  var tooltip_bar = d3.select("#scene1_bar_chart")
 .append("div")
   .style("opacity", 0)
@@ -59,7 +37,6 @@ tooltip_bar
           )
   .style("top", (d3.mouse(this)[1]) + "px")
 }
-
 
 var moveTooltip_bar = function(d) {
     tooltip_bar
@@ -94,7 +71,7 @@ var svg = d3.select("#scene1_bar_chart")
  .attr("height", height + margin.top + margin.bottom)
  .append("g")
  .attr("class", "annotation-group")
- .call(makeAnnotations)
+// .call(makeAnnotations)
  .attr("transform", 
        "translate(" + margin.left + "," + margin.top + ")");
 
