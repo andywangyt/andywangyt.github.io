@@ -30,7 +30,7 @@ tooltip
           + "</span><br/><span style='font-size: 12px; font-style: italic;'>Sales in the US: " + d.data.SalesUS 
           + "</span><br/><span style='font-size: 12px; font-style: italic;'>Sales in Europe: " + d.data.SalesEurope 
           + "</span><br/><span style='font-size: 12px; font-style: italic;'>Sales in Japan: " + d.data.SalesJapan 
-          + "</span><br/><span style='font-size: 12px; font-style: italic;'>Sales in Other Countries: " + d.data.SalesOthers 
+          + "</span><br/><span style='font-size: 12px; font-style: italic;'>Sales in other Countries: " + d.data.SalesOthers 
           + "</span>"
           // + "<img src='images/abstract-background-old.jpg' alt='Girl in a jacket' width='100' height='100'>"
           //+ "</img>"
@@ -143,16 +143,22 @@ text.attr("x", 0)
      .attr("fill", "lightgreen");
 
 text.append('tspan')
-.text('Nintendo sold over 35.49')
+.text('Nintendo is a Japanese')
 .attr("x", 0)
 .attr("y", 430);
 
 text.append('tspan')
-.text('million copies in 1990,')
+.text('multinational consumer')
 .attr("x", 0)
 .attr("y", 450);
 
 text.append('tspan')
-.text('ranking the top one in the world.')
+.text('electronics and video game')
 .attr("x", 0)
 .attr("y", 470);
+
+text.append('tspan')
+.text('company headquartered in Kyoto.')
+.attr("x", 0)
+.attr("y", 490);
+

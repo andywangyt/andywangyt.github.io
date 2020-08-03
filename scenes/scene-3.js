@@ -142,16 +142,16 @@ text.attr("x", 0)
 .attr("fill", "lightgreen");
 
 text.append('tspan')
-.text('Electronic Arts sold over 81.38')
+.text('Electronic Arts is an American ')
 .attr("x", 0)
 .attr("y", 430);
 
 text.append('tspan')
-.text('million copies in 2020,')
+.text('video game company ')
 .attr("x", 0)
 .attr("y", 450);
 
 text.append('tspan')
-.text('ranking the top one in the world.')
+.text('headquartered in California.')
 .attr("x", 0)
 .attr("y", 470);
