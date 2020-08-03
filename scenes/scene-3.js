@@ -128,8 +128,8 @@ d3.select(self.frameElement)
 svg.append("line")          // attach a line
 .style("stroke", "lightgreen")  // colour the line
 .style("stroke-width", 2)
-.attr("x1", 160)     // x position of the first end of the line
-.attr("y1", 230)      // y position of the first end of the line
+.attr("x1", 145)     // x position of the first end of the line
+.attr("y1", 233)      // y position of the first end of the line
 .attr("x2", 40)     // x position of the second end of the line
 .attr("y2", 420);
 
