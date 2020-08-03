@@ -108,3 +108,4 @@ svg.append("g")
 svg.append("g")
    .attr("class", "axisWhite")
    .call(d3.axisLeft(y));
+

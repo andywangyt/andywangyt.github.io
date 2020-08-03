@@ -1836,3 +1836,4 @@ node.append("text")
 
 d3.select(self.frameElement)
     .style("height", diameter + "px");
+
